@@ -1,0 +1,20 @@
+﻿@model CustomerProcessViewModel
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+
+<form method="post" class="container">
+    <label>Müşteri Adı:</label>
+    <input type="text" class="form-control" asp-for="CustomerName" />
+    <br />
+    <label>Çekmek İstediğiniz Tutar:</label>
+    <input type="text" class="form-control" asp-for="Amount" />
+    <br />
+    <button class="btn btn-warning">Para Çek</button>
+
+</form>
+
